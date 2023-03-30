@@ -65,8 +65,8 @@ class WavAudioSplitter():
 if __name__ == "__main__":
     folder = sys.argv[1]
     for root, dirs, files in os.walk(folder):
+        files = [file for file in files if file.endswith('.wav')]
         for file_name in files:
-            if file_name.endswith('.wav'):
-                file_path = os.path.join(root, file_name)
-                s = WavAudioSplitter(file_path)
-                s.multi_split(4, 5)  # Split to 5s clips, overlap 1 second
+            file_path = os.path.join(root, file_name)
+            s = WavAudioSplitter(file_path)
+            s.multi_split(4, 5)  # Split to 5s clips, overlap 1 second

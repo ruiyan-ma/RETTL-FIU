@@ -61,7 +61,13 @@ def transcribe_file(speech_file):
 if __name__ == "__main__":
     folder = sys.argv[1]
     for root, dirs, files in os.walk(folder):
-        for filename in files:
-            # print(file, transcribe_file(os.path.join(root, file)))
-            filepath = os.path.join(root, filename)
-            print("{}: {}".format(filename, transcribe_file(filepath)))
+        files = [file for file in files if file.endswith('.wav')]
+        for file_name in files:
+            wav_file_path = os.path.join(root, file_name)
+            transcript = transcribe_file(wav_file_path)
+            transcript = transcript if transcript else ""
+            # write transcript
+            script_file_path = os.path.splitext(wav_file_path)[0] + '.txt'
+            file = open(script_file_path, 'w+')
+            file.write(transcript)
+            file.close()

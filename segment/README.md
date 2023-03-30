@@ -26,4 +26,4 @@ Suppose you want to segment all audio files under `/root/home/example_folder`  :
 python segment.py /root/home/example_folder
 ```
 
-Both absolute path and relative path would work.
+Both absolute path and relative path would work. 

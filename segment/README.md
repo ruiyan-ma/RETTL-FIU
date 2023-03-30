@@ -20,10 +20,10 @@ If you want to install ffmpeg on other OS, check this [link](https://ffmpeg.org/
 
 ## How to Use
 
-Suppose you want to segment `example.wav` and store all clips in `/root/home/example_folder` : 
+Suppose you want to segment all audio files under `/root/home/example_folder`  : 
 
 ```
-python segment.py example.wav /root/home/example_folder
+python segment.py /root/home/example_folder
 ```
 
 Both absolute path and relative path would work.

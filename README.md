@@ -22,8 +22,7 @@ source env/bin/activate
 - [x]  Write python code to segment recordings in 5s clips.
 - [x]  Use google speech-to-text to transcript 5s clips and store transcriptions
 - [x]  Save the transcription for each 5 seconds clips, with the same naming conventions. 
-- [ ]  Password protected cloud-based storage to share with UCI, FIU, OS researchers.
-- [ ]  Extract and store acoustic features of clips (OpenSmile library), with the same naming conventions. 
+- [x]  Extract and store acoustic features of clips (OpenSmile library), with the same naming conventions. 
 - [ ]  Concatenate student id, clip id, acoustic features, transcription content to a csv file. 
 
 ### Naming Convention

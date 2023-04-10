@@ -2,7 +2,9 @@
 
 ## Requirements
 
-Set up a [python development environment](https://cloud.google.com/python/docs/setup) and activate it.
+Check out [openSMILE documentation](https://audeering.github.io/opensmile/get-started.html#obtaining-and-installing-opensmile) and download [openSMILE](https://github.com/audeering/opensmile/releases) library for your OS. 
+
+Note: for M1chip macbook, please exit docker container and download openSMILE macos version. Running openSMILE linux version in docker causes some issues and it's pretty slow. 
 
 ## How to Use
 

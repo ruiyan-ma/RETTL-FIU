@@ -2,9 +2,7 @@
 
 ## Requirements
 
-First, set up a [python development environment](https://cloud.google.com/python/docs/setup) and activate it. 
-
-Install the google-cloud-speech library. 
+First, we need the [google-cloud-speech](https://cloud.google.com/speech-to-text/docs/speech-to-text-client-libraries?hl=zh-cn) library. It's already installed in our docker container. 
 
 
 ```shell
@@ -25,7 +23,7 @@ If you want the variable to apply to future shell sessions, set the variable in 
 Suppose you want to transcribe all audio record files under `/root/home/example_folder` : 
 
 ```shell
-python transcribe.py /root/home/example_folder
+python3 transcribe.py /root/home/example_folder
 ```
 
 Both absolute path and relative path would work. 

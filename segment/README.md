@@ -2,28 +2,16 @@
 
 ## Requirements
 
-First, set up a [python development environment](https://cloud.google.com/python/docs/setup) and activate it.
+We need to install [pydub](https://pypi.org/project/pydub/) and [ffmpeg](https://ffmpeg.org/download.html) for the segment code. 
 
-Install pydub library. 
-
-```python
-pip install pydub
-```
-
-If you are using Ubuntu OS, you can install ffmpeg by the following command. 
-
-```
-sudo apt install ffmpeg
-```
-
-If you want to install ffmpeg on other OS, check this [link](https://ffmpeg.org/download.html). 
+If you are using our docker container, you don't need to do anything. 
 
 ## How to Use
 
 Suppose you want to segment all audio files under `/root/home/example_folder`  : 
 
-```
-python segment.py /root/home/example_folder
+```shell
+python3 segment.py /root/home/example_folder
 ```
 
 Both absolute path and relative path would work. 

@@ -8,13 +8,20 @@ Automated robotics training in VR: Concept and Affect Detection.
 
 ### Requirements
 
-Set up a Python development environment for this project using this [tutorial](https://cloud.google.com/python/docs/setup#macos). 
+Use `Dockerfile` to build an docker image and create a new container. 
 
 ```shell
-cd your-project
-python -m venv env
-source env/bin/activate
+docker build -t confidence .
+docker run -itd -v "your_working_dir":/root/home --name confidence confidence:basic
 ```
+
+Then start our new container. 
+
+```shell
+docker exec -it confidence /bin/zsh
+```
+
+See special requirements in each subfolder. 
 
 ### Tasks
 
@@ -27,16 +34,16 @@ source env/bin/activate
 
 ### Naming Convention
 
-First directory: student_id
+First directory: studentId
 
-Second directory: student_id-task__id
+Second directory: studentId-taskId
 
-Third directory: student_id-task__id-clip_id
+Third directory: studentId-taskId-clipId
 
-For each clip: studentId-taskId-clipId. 
+For each clip: studentId-taskId-clipId
 
 ### Extract Features
 
-Extract and store acoustic features: compare emotion, EGEmaps. 
+Extract and store acoustic features: using compare emotion, EGEmaps configuration files.
 
 Goal: find the features which are most correlated to the labeled confident extend. 

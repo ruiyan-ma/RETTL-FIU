@@ -28,11 +28,11 @@ source env/bin/activate
 
 ### Naming Convention
 
-First directory: student id
+First directory: student_id
 
-Second directory: task id
+Second directory: student_id-task__id
 
-Third directory: clip id number
+Third directory: student_id-task__id-clip_id
 
 For each clip: studentId-taskId-clipId. 
 
@@ -40,4 +40,4 @@ For each clip: studentId-taskId-clipId.
 
 Extract and store acoustic features: compare emotion, EGEmaps. 
 
-Goal: find the features which are most correlated to the labeled confident extend.
+Goal: find the features which are most correlated to the labeled confident extend. 
